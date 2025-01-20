@@ -24,10 +24,6 @@
 
    --mayaBlue-color: rgb(100, 200, 255);
 
-   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
-   --linear-gradient-2: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
-   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
-
  }
 
  html {
@@ -281,6 +277,32 @@
             width: 100%;
           }
 
+        }
+      }
+
+    }
+
+    .curriculum-section {
+
+      background-image: none;
+
+      .curriculum-container {
+        padding: 1.2rem;
+
+        .curriculum-content {
+          
+          .curriculum-text {
+            width: 100%;
+            margin: 1.5rem 0;
+          }
+        }
+
+        .curriculum-card {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .move-btn {
+          display: none;
         }
       }
 

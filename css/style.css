@@ -20,13 +20,10 @@
    --neonblue-color: rgb(93, 88, 239);
 
    --limerick-color: rgb(149, 178, 38);
-   --Turquoise-color: rgb(60, 216, 232);
+   --turquoise-color: rgb(60, 216, 232);
 
    --MayaBlue-color: rgb(100, 200, 255);
 
-   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
-   --linear-gradient-2: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
-   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
  }
 
  html {
@@ -67,6 +64,16 @@
   border: none;
   color: var(--white-color);
   background-color: var(--orange-color);
+ }
+
+ .btn-secondary {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem 2.5rem;
+  border-radius: 5rem;
+  border: none;
+  color: var(--white-color);
+  background-color: var(--turquoise-color);
  }
 
  li, a {
@@ -197,10 +204,8 @@
   .curriculum-section{
 
     background-image: url(../assets/bg.png);
-    /* background-color: gray; */
     background-size: cover;
     background-repeat: no-repeat;
-    color: var(--dark-color);
 
     .curriculum-container {
       text-align: center;
@@ -225,10 +230,7 @@
     .curriculum-card {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-      justify-content: center;
       gap: 2rem;
-      padding: 1rem 8rem;
 
       .card {
         border-radius: 1rem;
@@ -258,7 +260,8 @@
         }
 
         .blank-btn{
-          font-size: .9rem;
+          font-size: 1rem;
+          font-weight: 500;
         }
 
       }
@@ -288,7 +291,14 @@
         i{
           font-size: 2rem;
           color: var(--white-color);
+          transition: transform .3s ease;
+
+          &:hover {
+            transform: translate(-3px);
+          }
         }
+
+        
 
       }
 
@@ -302,13 +312,117 @@
         i{
           font-size: 2rem;
           color: var(--white-color);
+          transition: transform .3s ease;
+
+          &:hover {
+            transform: translate(3px);
+          }
         }
 
       }
     }
   }
 
-}
+  }
   
+  /* curriculum-section style end  */
+
+
+  /* stories-section style start  */
   
-  /* curriculum-section style start  */
+  .stories-section {
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+
+    .stories-container {
+      text-align: center;
+
+      .stories-content {
+
+        .stories-title {
+          font-size: 2.5rem;
+          font-weight: 700;
+          line-height: 1.2;
+        }
+
+        .stories-text {
+          font-size: 1rem;
+          line-height: 1.5;
+          width: 70%;
+          margin: 1rem auto 1rem auto;
+        }
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem 0;
+
+        .card {
+          position: relative;
+          border-radius: 1rem;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          cursor: pointer;
+          text-align: left;
+          
+          img {
+            width: 100%;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+          }
+
+          .btn-secondary{
+            position: absolute;
+            margin-top: -25px;
+            margin-left: 30px;
+            transition: transform .3s ease;
+            cursor: pointer;
+
+            &:hover {
+              transform: translateX(10px);
+            }
+
+          }
+
+          .card-title {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: .8rem 2rem;
+
+          }
+          .card-text {
+            font-size: .9rem;
+            line-height: 1.6;
+            padding: .2rem 2rem;
+          }
+
+        }
+
+        .card-1{
+          .card-title{
+            font-size: 1.5rem;
+            margin: 1.5rem 0 .1rem 0;
+          }
+          .card-text{
+            font-size: 1rem;
+          }
+        }
+
+        .card-4side{
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          gap: 2rem;
+
+        }
+      }
+
+
+    }
+
+  } 
+
+
+
+
+  /* stories-section style end  */
+
