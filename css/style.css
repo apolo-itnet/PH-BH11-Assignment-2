@@ -22,6 +22,11 @@
    --limerick-color: rgb(149, 178, 38);
    --Turquoise-color: rgb(60, 216, 232);
 
+   --MayaBlue-color: rgb(100, 200, 255);
+
+   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
+   --linear-gradient-2: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
+   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
  }
 
  html {
@@ -32,9 +37,17 @@
     color: var(--orange-color);
  }
 
-  .skyblue {
-      color: var(--skyblue-color);
-  }
+.skyBlue {
+    color: var(--skyblue-color);
+ }
+
+.mayaBlue {
+    color: var(--mayaBlue-color);
+ }
+
+.neonBlue {
+    color: var(--neonblue-color);
+ }
 
 
 
@@ -74,6 +87,8 @@
   /* navbar style start  */
 
  .navbar-section{
+  padding-bottom: 0;
+
 
     display: flex;
     justify-content: space-between;
@@ -133,7 +148,7 @@
   /* Hero-section style start  */
   
   .hero-section {
-    
+    min-height: 90vh;
     
     .banner-container {
       align-items: center;
@@ -150,26 +165,150 @@
         }
 
         .banner-text {
-          font-size: 1.1rem;
-          padding: 2rem 0;
+          font-size: 1rem;
+          line-height: 1.5;
+          padding: 1rem 0 3rem 0;
+
         }
 
         .btn-primary {
+
           background-color: var(--dark-color);
         }
       
       }
 
-      .hero-img {
-        width: 50%;
+      .banner-image {
+
         img {
           width: 100%;
         }
       }
+
     }
 
   }
   
+  /* Hero-section style end  */
+
+
+  /* curriculum-section style start  */
+  
+  .curriculum-section{
+
+    background-image: url(../assets/bg.png);
+    /* background-color: gray; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--dark-color);
+
+    .curriculum-container {
+      text-align: center;
+
+
+    .curriculum-content {
+
+      .curriculum-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .curriculum-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 70%;
+        margin: 1rem auto 3rem auto;
+      }
+    }
+
+    .curriculum-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 8rem;
+
+      .card {
+        border-radius: 1rem;
+        padding: 2.5rem 1rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        transition: transform .3s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-10px);
+          
+        }
+
+        
+        img {
+          width: 40%;
+        }
+        .card-title {
+          font-size: 1.2rem;
+          font-weight: 700;
+          padding: .8rem 0;
+        }
+        .card-text {
+          font-size: .9rem;
+          line-height: 1.6;
+          padding: 0 0 .5rem 0;
+        }
+
+        .blank-btn{
+          font-size: .9rem;
+        }
+
+      }
+
+      .card-1{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(222,245,255,1) 99%);
+      }
+      .card-2{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255, 244, 220,1) 99%);
+      }
+      .card-3{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(238, 225, 255,1) 99%);
+      }
+
+    }
+
+    .move-btn {
+      padding: 2rem 0;
+      
+      .move-left {
+        width: 45px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: var(--orange-color);
+        cursor: pointer;
+        
+        i{
+          font-size: 2rem;
+          color: var(--white-color);
+        }
+
+      }
+
+      .move-right {
+        width: 45px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: var(--orange-color);
+        cursor: pointer;
+
+        i{
+          font-size: 2rem;
+          color: var(--white-color);
+        }
+
+      }
+    }
+  }
+
+}
   
   
-  /* Hero-section style start  */
+  /* curriculum-section style start  */

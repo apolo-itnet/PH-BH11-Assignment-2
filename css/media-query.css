@@ -22,6 +22,12 @@
    --limerick-color: rgb(149, 178, 38);
    --Turquoise-color: rgb(60, 216, 232);
 
+   --mayaBlue-color: rgb(100, 200, 255);
+
+   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
+   --linear-gradient-2: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
+   --linear-gradient-1: linear-gradient(120deg, rgb(222, 245, 255), rgba(255, 255, 255, 0));
+
  }
 
  html {
