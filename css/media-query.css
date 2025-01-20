@@ -28,136 +28,261 @@
     scroll-behavior: smooth;
  }
 
- .orange {
-    color: var(--orange-color);
- }
+   /* Mobile Screen - 1366px */
+   @media screen and (max-width: 1366px) {
 
-  .skyblue {
-      color: var(--skyblue-color);
+    body {
+      overflow-x: hidden;
+    }
+      
+      .padding {
+          padding: 1.5rem 8rem;
+      }
+  
+      .btn-primary {
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 0.6rem 1rem;
+          border-radius: .5rem;
+          border: none;
+          color: var(--white-color);
+          background-color: var(--orange-color);
+      }
+  
+      .navbar-section {
+  
+      }
+  
+      .hero-section {
+        padding-top: 0rem ;
+  
+        .banner-container {
+  
+          .banner-content {
+            width: 80%;
+  
+            .banner-title {
+              font-size: 3.5rem;
+            }
+  
+            .banner-text {
+              font-size: 1.1rem;
+              line-height: 1.5;
+              margin-bottom: .5rem;
+            }
+  
+            .btn-primary {
+              padding: .8rem 2rem;
+              font-size: 1.1rem;
+            }
+          }
+  
+          .banner-image {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+  
+            img {
+              width: 100%;
+            }
+  
+          }
+        }
+  
+      }
+  
+  
+   }
+
+ 
+  /* Mobile Screen - 834px */
+  @media screen and (max-width: 834px) {
+
+    body {
+      overflow-x: hidden;
+    }
+      
+      .padding {
+          padding: 1.5rem 2rem;
+      }
+  
+      .btn-primary {
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 0.6rem 1rem;
+          border-radius: .5rem;
+          border: none;
+          color: var(--white-color);
+          background-color: var(--orange-color);
+      }
+  
+      .navbar-section {
+        border-bottom: 1px solid var(--orange-color);
+  
+        .navbar-logo {
+  
+          .logo {
+  
+            .logo-name {
+              display: none;
+            }
+          }
+        }
+  
+        .nav-menu {
+          display: none;
+        }
+  
+        .nav-icons {
+  
+          .btn-primary {
+            display: none;
+          }
+  
+          .menu-icon {
+            display: block;
+          }
+        }
+  
+      }
+  
+      .hero-section {
+  
+        .banner-container {
+          padding: 1.2rem;
+          gap: 1rem;
+          flex-direction: column-reverse;
+  
+          .banner-content {
+            text-align: center;
+            width: 100%;
+  
+            .banner-title {
+              font-size: 3rem;
+            }
+  
+            .banner-text {
+              font-size: 1.4rem;
+              line-height: 1.5;
+              margin-bottom: 1rem;
+            }
+  
+            .btn-primary {
+              padding: 1rem 2.5rem;
+              font-size: 1.4rem;
+            }
+          }
+  
+          .banner-image {
+            width: 60%;
+  
+            img {
+              width: 100%;
+            }
+  
+          }
+        }
+  
+      }
+  
+  
+   }
+
+ /* Mobile Screen - 492px */
+ @media screen and (max-width: 492px) {
+
+  body {
+    overflow-x: hidden;
   }
-
-
-
- .padding {
-    padding: 1rem 8rem;
- }
-
- .no-padding {
-    padding: 0;
- }
-
- .btn-primary {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.6rem 3rem;
-  border-radius: .5rem;
-  border: none;
-  color: var(--white-color);
-  background-color: var(--orange-color);
- }
-
- li, a {
-  list-style: none;
-  text-decoration: none;
-  color: var(--dark-color);
- }
-
- .hide {
-  display: none;
- }
-
- .flex {
-  display: flex;
- }
-
-
-  /* navbar style start  */
-
- .navbar-section{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--white-color);
-
-    .logo {
-      display: flex;
-      align-items: center;
-      font-size: .6rem;
-      font-weight: 600;
-      gap: .5rem;
-      text-transform: uppercase;
+    
+    .padding {
+        padding: 1rem 1rem;
     }
 
-    .nav-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
+    .btn-primary {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.6rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        color: var(--white-color);
+        background-color: var(--orange-color);
+    }
 
-        a {
-            font-size: 1.1rem;
-            font-weight: 500;
+    .navbar-section {
+      border-bottom: 1px solid var(--orange-color);
+
+      .navbar-logo {
+
+        .logo {
+
+          .logo-name {
+            display: none;
           }
-
-            .menu-1 {
-              color: var(--orange-color);
-            }
-            .menu-2 {
-              color: var(--skyblue-color);
-            }
-            .menu-3 {
-              color: var(--lightblue-color);
-            }
-            .menu-4 {
-              color: var(--neonblue-color);
-            }
+        }
       }
-  }
 
-  /* navbar style end  */
+      .nav-menu {
+        display: none;
+      }
 
-
-  /* Hero-section style start  */
-  
-  .hero-section {
-    
-    
-    .banner-container {
-      align-items: center;
-      justify-content: center;
-      gap: 4rem;
-      
-      .banner-content {
-        width: 50%;
-
-        .banner-title {
-          font-size: 3rem;
-          font-weight: 700;
-          line-height: 1.2;
-        }
-
-        .banner-text {
-          font-size: 1.1rem;
-          padding: 2rem 0;
-        }
+      .nav-icons {
 
         .btn-primary {
-          background-color: var(--dark-color);
+          display: none;
         }
-      
+
+        .menu-icon {
+          display: block;
+        }
       }
 
-      .hero-img {
-        width: 50%;
-        img {
-          width: 100%;
-        }
-      }
     }
 
-  }
-  
-  
-  
-  /* Hero-section style start  */
+    .hero-section {
+
+      .banner-container {
+        padding: 1.2rem;
+        gap: 1rem;
+        flex-direction: column-reverse;
+
+        .banner-content {
+          text-align: center;
+          width: 100%;
+
+          .banner-title {
+            font-size: 2.7rem;
+          }
+
+          .banner-text {
+            font-size: 1.1rem;
+            line-height: 1.5;
+          }
+
+          .btn-primary {
+            padding: 1rem 2.5rem;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+          }
+        }
+
+        .banner-image {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+
+        }
+      }
+
+    }
+
+
+ }
+
+
+
+
