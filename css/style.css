@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+   --skyblue-color: rgb(1, 172, 253);
+   --orange-color: rgb(254, 163, 1);
+
+   --dark-color: rgb(17, 17, 17);
+   --white-color: rgb(255, 255, 255);
+   
+   --lightblue-color: rgb(5, 212, 223);
+   --neonblue-color: rgb(93, 88, 239);
+
+   --limerick-color: rgb(149, 178, 38);
+   --Turquoise-color: rgb(60, 216, 232);
+
+ }
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+ .orange {
+    color: var(--orange-color);
+ }
+
+  .skyblue {
+      color: var(--skyblue-color);
+  }
+
+
+
+ .padding {
+    padding: 1rem 8rem;
+ }
+
+ .no-padding {
+    padding: 0;
+ }
+
+ .btn-primary {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 3rem;
+  border-radius: .5rem;
+  border: none;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+ }
+
+ li, a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--dark-color);
+ }
+
+ .hide {
+  display: none;
+ }
+
+ .flex {
+  display: flex;
+ }
+
+
+  /* navbar style start  */
+
+ .navbar-section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: .6rem;
+      font-weight: 600;
+      gap: .5rem;
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        a {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+
+            .menu-1 {
+              color: var(--orange-color);
+            }
+            .menu-2 {
+              color: var(--skyblue-color);
+            }
+            .menu-3 {
+              color: var(--lightblue-color);
+            }
+            .menu-4 {
+              color: var(--neonblue-color);
+            }
+      }
+  }
+
+  /* navbar style end  */
+
+
+  /* Hero-section style start  */
+  
+  .hero-section {
+    
+    
+    .banner-container {
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      
+      .banner-content {
+        width: 50%;
+
+        .banner-title {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 1.2;
+        }
+
+        .banner-text {
+          font-size: 1.1rem;
+          padding: 2rem 0;
+        }
+
+        .btn-primary {
+          background-color: var(--dark-color);
+        }
+      
+      }
+
+      .hero-img {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+  
+  
+  
+  /* Hero-section style start  */
