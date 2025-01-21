@@ -344,6 +344,54 @@
     }
     }
 
+    .footer-section {
+      height: auto;
+      padding: 4rem 1rem;
+
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1rem;
+        gap: 2rem;
+
+        .footer-content {
+
+            .logo {
+
+              img {
+                width: 10%;
+              }
+
+            }
+
+          .footer-text {
+            font-size: 1.3rem;
+          }
+        }
+
+        .nav-links {
+          
+  
+          .nav-title {
+           
+  
+          }
+  
+          .nav-item {
+            gap: 1.5rem;
+
+              
+            .nav-link { 
+              font-size: 1.3rem;
+              font-weight: 500;
+            }
+          }
+  
+        }
+
+      }
+    }
+
  }
 
 

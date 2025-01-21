@@ -119,14 +119,22 @@
     align-items: center;
     color: var(--white-color);
 
-    .logo {
-      display: flex;
-      align-items: center;
-      font-size: .6rem;
-      font-weight: 600;
-      gap: .5rem;
-      text-transform: uppercase;
-    }
+    .navbar-logo {
+      width: 20%;
+
+      .logo {
+          display: flex;
+          align-items: center;
+          font-size: .6rem;
+          font-weight: 600;
+          gap: .5rem;
+          text-transform: uppercase;
+    
+          img {
+            width: 20%;
+          }
+      }
+     }
 
     .nav-menu {
         display: flex;
@@ -151,7 +159,7 @@
             .menu-4 {
               color: var(--neonblue-color);
             }
-      }
+    }
     
     .nav-icons{
       display: flex;
@@ -552,22 +560,30 @@
 
         .navbar-logo {
           display: flex;
-          align-items: center;
-          font-size: .9rem;
-          padding-bottom: 1rem;
-
-          .logo-name {
-            font-size: 2rem;
+          width: 60%;
+          gap: 1rem;
+    
+          .logo {
+              display: flex;
+              align-items: center;
+              font-size: .6rem;
+              font-weight: 600;
+              gap: .5rem;
+              text-transform: uppercase;
+        
+              img {
+                width: 100%;
+              }
           }
-        }
+         }
 
         .footer-text {
           font-size: 1rem;
           line-height: 1.5;
           text-align: justify;
+          margin-top: 1rem;
         }
       }
-
 
       .nav-links {
         display: flex;
@@ -609,12 +625,12 @@
           display: flex;
           gap: 1rem;
 
-          .social-link {
+          .social-icon {
             width: 45px;
             aspect-ratio: 1;
             font-size: 1.5rem;
             color: var(--white-color);
-            border: 1px solid var(--white-color);
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
             border-radius: 50%;
             transition: all .3s ease;
 
@@ -624,15 +640,26 @@
 
             &:hover {
               transform : rotate(360deg);
-              color: var(--orange-color);
             
           }
         }
       }
+
+            .icon-1 {
+              background-color: var(--orange-color);
+            }
+            .icon-2 {
+              background-color: var(--limerick-color);
+            }
+            .icon-3 {
+              background-color: var(--neonblue-color);
+            }
+            .icon-4 {
+              background-color: tomato;
+            }
+      }
     }
   }
-}  
-  
   
   /* footer-section style end  */
 
