@@ -382,16 +382,6 @@
           padding: 1rem 0.8rem;
       }
 
-      .btn-primary {
-          font-size: 1rem;
-          font-weight: 500;
-          padding: 0.6rem 1rem;
-          border-radius: .5rem;
-          border: none;
-          color: var(--white-color);
-          background-color: var(--orange-color);
-      }
-
       .navbar-section {
         border-bottom: 1px solid var(--orange-color);
         padding: 1rem 2rem;
@@ -439,7 +429,6 @@
       .hero-section {
 
         .banner-container {
-          /* padding: 1.2rem; */
           gap: 1rem;
           flex-direction: column-reverse;
 
@@ -458,9 +447,11 @@
             }
 
             .btn-primary {
-              padding: 1rem 2.5rem;
-              font-size: 1.4rem;
+              padding: .8rem 1.5rem;
+              font-size: 1rem;
             }
+
+            
           }
 
           .banner-image {
@@ -526,35 +517,43 @@
           .card-container {
             grid-template-columns: repeat(1, 1fr);
           
-
-          .card-1 {
-            display: none;
-          }
-
-          .card-4side {
-            gap: 1rem;
-
-            .card {
-
-              .date-badges-small {
-                bottom: 80px;
-              }
-
-              .card-title {
-                margin: 1rem;
-                padding: .8rem 0;
-              }
+            .card-1 {
+              display: none;
             }
 
-            .card-4, .card-5 {
+            .card-4side {
+              gap: 1rem;
 
-              .date-badges-small {
-                bottom: 100px;
+              .card {
+
+                .date-badges-small {
+                  bottom: 80px;
+                }
+
+                .card-title {
+                  margin: 1rem;
+                  padding: .8rem 0;
+                }
               }
 
+              .card-4, .card-5 {
+
+                .date-badges-small {
+                  bottom: 100px;
+                }
+
+              }
             }
           }
-        }
+          
+          .view-all {
+            padding: 1rem 0;
+
+            .btn-primary {
+              padding: .8rem 1.5rem;
+              font-size: 1.2rem;
+            }
+          }
       }
       }
 
@@ -801,10 +800,7 @@
             }
            }
           }
-
-          .view-all {
-            /* padding: .8rem 1.5rem; */
-          }
+          
         }
       }
 
