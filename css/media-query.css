@@ -176,7 +176,7 @@
             }
   
             .banner-text {
-              font-size: 1.4rem;
+              font-size: 1.6rem;
               line-height: 1.5;
               margin-bottom: 1rem;
             }
@@ -208,14 +208,40 @@
 
           .curriculum-content {
 
+            .curriculum-title{
+              font-size: 3rem;
+            }
+
             .curriculum-text {
               width: 100%;
+              font-size: 1.4rem;
               margin: 1.5rem 0;
             }
           }
 
           .curriculum-card {
             grid-template-columns: repeat(1, 1fr);
+
+            .card {
+
+              padding: 2rem;
+
+              img {
+                width: 30%;
+              }
+
+              .card-title {
+                font-size: 2rem;
+                padding: 0;
+              }
+              .card-text {
+                font-size: 1.5rem;
+                padding: 1.5rem 0;
+              }
+              .blank-btn{
+                font-size: 1.6rem;
+              }
+            }
           }
 
           .move-btn {
@@ -228,25 +254,30 @@
       .stories-section {
 
         .stories-container {
+
+          .stories-content {
+
+            .stories-title {
+              font-size: 3rem;
+            }
+
+            .stories-text {
+              font-size: 1.5rem;
+            }
+          }
           
           .card-container {
             grid-template-columns: repeat(1, 1fr);
           
 
           .card-1 {
-            /* display: none; */
-
-            .date-badges {
-              bottom: 195px;
-            }
+            display: none;
           }
 
           .card-4side {
             gap: 1rem;
 
             .card {
-
-              
 
               .date-badges-small {
                 bottom: 80px;
@@ -261,7 +292,7 @@
             .card-4, .card-5 {
 
               .date-badges-small {
-                bottom: 80px;
+                bottom: 85px;
               }
 
             }
@@ -284,8 +315,10 @@
 
             .navbar-logo {
               display: flex;
-              width: 35%;
+              align-items: center;
               gap: 1rem;
+              width: 40%;
+
         
               .logo {
                   display: flex;
@@ -298,11 +331,15 @@
                   img {
                     width: 100%;
                   }
+               }
+
+              .logo-name{
+                font-size: 2.5rem;
               }
             }
 
             .footer-text {
-              font-size: 1.3rem;
+              font-size: 1.6rem;
             }
           }
 
@@ -319,7 +356,7 @@
 
                 
               .nav-link { 
-                font-size: 1.3rem;
+                font-size: 1.6rem;
                 font-weight: 500;
               }
             }
@@ -575,6 +612,269 @@
               }
             }
     
+          }
+
+        }
+      }
+
+  }
+
+  /* Mobile Screen - 360px */
+  @media screen and (max-width: 360px) {
+
+    body {
+      overflow-x: hidden;
+    }
+      
+      .padding {
+          padding: 1rem 0.8rem;
+      }
+
+      .btn-primary {
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 0.8rem 1.5rem;
+          border-radius: .5rem;
+          border: none;
+          color: var(--white-color);
+          background-color: var(--orange-color);
+      }
+
+      .navbar-section {
+        border-bottom: 1px solid var(--orange-color);
+        padding: 1rem 1.5rem;
+
+        .navbar-logo {
+          width: 60%;
+    
+          .logo {
+        
+              img {
+                width: 25%;
+              }
+            
+            .logo-name {
+              display: none;
+            }
+          }
+        }
+
+        .nav-menu {
+          display: none;
+        }
+
+        .nav-icons {
+
+          .btn-primary {
+            display: none;
+          }
+
+          .menu-icon {
+            display: block;
+          }
+        }
+
+      }
+
+      .hero-section {
+
+        .banner-container {
+
+          .banner-content {
+
+            .banner-title {
+              font-size: 1.6rem;
+            }
+
+            .banner-text {
+              font-size: 1.1rem;
+            }
+
+            .btn-primary {
+              padding: .8rem 1.5rem;
+              font-size: 1.1rem;
+            }
+          }
+
+          .banner-image {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+
+          }
+        }
+
+      }
+
+      .curriculum-section {
+
+
+        .curriculum-container {
+
+          padding: .8rem ;
+
+          .curriculum-content {
+
+            .curriculum-title{
+              font-size: 1.5rem;
+            }
+
+            .curriculum-text {
+              width: 100%;
+              font-size: 1.1rem;
+              margin: 1.5rem 0;
+            }
+          }
+
+          .curriculum-card {
+            grid-template-columns: repeat(1, 1fr);
+
+            .card {
+              padding: .8rem ;
+
+              img {
+                width: 40%;
+              }
+
+              .card-title {
+                font-size: 1.2rem;
+                padding-top: 1rem;
+              }
+              .card-text {
+                font-size: 1.1rem;
+                padding: .5rem;
+              }
+              .blank-btn{
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          .move-btn {
+            display: none;
+          }
+        }
+
+      }
+
+      .stories-section {
+
+        .stories-container {
+
+          .stories-content {
+
+            .stories-title {
+              font-size: 1.8rem;
+            }
+
+            .stories-text {
+              font-size: 1.1rem;
+            }
+          }
+          
+          .card-container {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 1rem 0;
+          
+
+          .card-1 {
+            display: none;
+          }
+
+          .card-4side {
+            gap: 1rem;
+
+            .card {
+
+              .date-badges-small {
+                font-size: .7rem;
+                bottom: 125px;
+                left: 5px;
+              }
+
+              .card-title {
+                margin: 1rem;
+                padding: .8rem 0;
+              }
+            }
+           }
+          }
+
+          .view-all {
+            /* padding: .8rem 1.5rem; */
+          }
+        }
+      }
+
+
+
+      .footer-section {
+        height: auto;
+        padding: 4rem 1rem;
+
+        .footer-container {
+          display: flex;
+          flex-direction: column;
+          padding: 0rem 1rem;
+          gap: 2rem;
+
+          .footer-content {
+
+            .navbar-logo {
+              width: 70%;
+        
+              .logo {
+            
+                  img {
+                    width: 100%;
+                  }
+              }
+
+              .logo-name{
+                font-size: 1.5rem;
+              }
+            }
+
+            .footer-text {
+              font-size: 1.1rem;
+            }
+          }
+
+          .nav-links {
+            gap: 0;
+    
+            .nav-title {
+              font-size: 1.6rem;
+            }
+    
+            .nav-item {
+              gap: 1rem;
+                
+              .nav-link { 
+                font-size: 1rem;
+                font-weight: 500;
+              }
+            }
+    
+          }
+
+          .footer-social {
+
+            .social-title {
+              font-size: 1.6rem;
+            }
+
+            .icon-link {
+
+              .social-icon {
+                font-size: 1.2rem;
+                width: 40px;
+                aspect-ratio: 1;
+
+              }
+            }
           }
 
         }
