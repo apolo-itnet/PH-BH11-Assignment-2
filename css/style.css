@@ -493,7 +493,6 @@
                 background-color: var(--neonblue-color);
               }
             }
-            }
 
             .card-5 {
               .card-title{
@@ -506,6 +505,8 @@
                 background-color: var(--limerick-color);
               }
             }
+          }
+          
         }
 
         .view-all{
