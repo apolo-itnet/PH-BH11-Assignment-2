@@ -50,11 +50,8 @@
           color: var(--white-color);
           background-color: var(--orange-color);
       }
-  
-      .navbar-section {
-  
-      }
-  
+
+      
       .hero-section {
         padding-top: 0rem ;
   
@@ -193,7 +190,7 @@
    }
 
  /* Mobile Screen - 492px */
- @media screen and (max-width: 491px) {
+ @media screen and (max-width: 492px) {
 
   body {
     overflow-x: hidden;
@@ -345,7 +342,7 @@
         }
       }
     }
-  }
+    }
 
  }
 
