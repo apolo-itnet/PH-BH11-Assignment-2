@@ -121,15 +121,27 @@
         border-bottom: 1px solid var(--orange-color);
   
         .navbar-logo {
-  
+          display: flex;
+          width: 60%;
+          gap: 1rem;
+    
           .logo {
-  
-            .logo-name {
-              display: none;
-            }
+              display: flex;
+              align-items: center;
+              font-size: .6rem;
+              font-weight: 600;
+              gap: .5rem;
+              text-transform: uppercase;
+        
+              img {
+                width: 15%;
+              }
+
+              .logo-name {
+                display: none;
+              }
           }
         }
-  
         .nav-menu {
           display: none;
         }
@@ -148,6 +160,7 @@
       }
   
       .hero-section {
+        min-height: 0;
   
         .banner-container {
           padding: 1.2rem;
@@ -185,214 +198,389 @@
         }
   
       }
+
+      .curriculum-section {
+
+
+        .curriculum-container {
+
+          padding: 1.2rem;
+
+          .curriculum-content {
+
+            .curriculum-text {
+              width: 100%;
+              margin: 1.5rem 0;
+            }
+          }
+
+          .curriculum-card {
+            grid-template-columns: repeat(1, 1fr);
+          }
+
+          .move-btn {
+            display: none;
+          }
+        }
+
+      }
+
+      .stories-section {
+
+        .stories-container {
+          
+          .card-container {
+            grid-template-columns: repeat(1, 1fr);
+          
+
+          .card-1 {
+            /* display: none; */
+
+            .date-badges {
+              bottom: 195px;
+            }
+          }
+
+          .card-4side {
+            gap: 1rem;
+
+            .card {
+
+              
+
+              .date-badges-small {
+                bottom: 80px;
+              }
+
+              .card-title {
+                margin: 1rem;
+                padding: .8rem 0;
+              }
+            }
+
+            .card-4, .card-5 {
+
+              .date-badges-small {
+                bottom: 80px;
+              }
+
+            }
+          }
+        }
+      }
+      }
+
+      .footer-section {
+        height: auto;
+        padding: 4rem 1rem;
+
+        .footer-container {
+          display: flex;
+          flex-direction: column;
+          padding: 0rem 1rem;
+          gap: 2rem;
+
+          .footer-content {
+
+            .navbar-logo {
+              display: flex;
+              width: 35%;
+              gap: 1rem;
+        
+              .logo {
+                  display: flex;
+                  align-items: center;
+                  font-size: .6rem;
+                  font-weight: 600;
+                  gap: .5rem;
+                  text-transform: uppercase;
+            
+                  img {
+                    width: 100%;
+                  }
+              }
+            }
+
+            .footer-text {
+              font-size: 1.3rem;
+            }
+          }
+
+          .nav-links {
+            
+    
+            .nav-title {
+            
+    
+            }
+    
+            .nav-item {
+              gap: 1.5rem;
+
+                
+              .nav-link { 
+                font-size: 1.3rem;
+                font-weight: 500;
+              }
+            }
+    
+          }
+
+        }
+      }
+
+
   
   
    }
 
- /* Mobile Screen - 492px */
- @media screen and (max-width: 492px) {
+  /* Mobile Screen - 492px */
+  @media screen and (max-width: 492px) {
 
-  body {
-    overflow-x: hidden;
-  }
+    body {
+      overflow-x: hidden;
+    }
+      
+      .padding {
+          padding: 1rem 0.8rem;
+      }
+
+      .btn-primary {
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 0.6rem 1rem;
+          border-radius: .5rem;
+          border: none;
+          color: var(--white-color);
+          background-color: var(--orange-color);
+      }
+
+      .navbar-section {
+        border-bottom: 1px solid var(--orange-color);
+        padding: 1rem 2rem;
+
+        .navbar-logo {
+          display: flex;
+          width: 60%;
+          gap: 1rem;
     
-    .padding {
-        padding: 1rem 1rem;
-    }
+          .logo {
+              display: flex;
+              align-items: center;
+              font-size: .6rem;
+              font-weight: 600;
+              gap: .5rem;
+              text-transform: uppercase;
+        
+              img {
+                width: 20%;
+              }
+            
+            .logo-name {
+              display: none;
+            }
+          }
+        }
 
-    .btn-primary {
-        font-size: 1rem;
-        font-weight: 500;
-        padding: 0.6rem 1rem;
-        border-radius: .5rem;
-        border: none;
-        color: var(--white-color);
-        background-color: var(--orange-color);
-    }
+        .nav-menu {
+          display: none;
+        }
 
-    .navbar-section {
-      border-bottom: 1px solid var(--orange-color);
+        .nav-icons {
 
-      .navbar-logo {
+          .btn-primary {
+            display: none;
+          }
 
-        .logo {
+          .menu-icon {
+            display: block;
+          }
+        }
 
-          .logo-name {
+      }
+
+      .hero-section {
+
+        .banner-container {
+          /* padding: 1.2rem; */
+          gap: 1rem;
+          flex-direction: column-reverse;
+
+          .banner-content {
+            text-align: center;
+            width: 100%;
+
+            .banner-title {
+              font-size: 2.7rem;
+            }
+
+            .banner-text {
+              font-size: 1.2rem;
+              line-height: 1.5;
+              padding-bottom: 1rem;
+            }
+
+            .btn-primary {
+              padding: 1rem 2.5rem;
+              font-size: 1.4rem;
+            }
+          }
+
+          .banner-image {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+
+          }
+        }
+
+      }
+
+      .curriculum-section {
+
+
+        .curriculum-container {
+
+          padding: 1.2rem;
+
+          .curriculum-content {
+
+            .curriculum-title{
+              font-size: 2.2rem;
+            }
+
+            .curriculum-text {
+              width: 100%;
+              font-size: 1.2rem;
+              margin: 1.5rem 0;
+            }
+          }
+
+          .curriculum-card {
+            grid-template-columns: repeat(1, 1fr);
+
+            .card {
+
+              .card-title {
+                font-size: 1.5rem;
+              }
+              .card-text {
+                font-size: 1.1rem;
+              }
+              .blank-btn{
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          .move-btn {
             display: none;
           }
         }
+
       }
 
-      .nav-menu {
-        display: none;
-      }
+      .stories-section {
 
-      .nav-icons {
+        .stories-container {
+          
+          .card-container {
+            grid-template-columns: repeat(1, 1fr);
+          
 
-        .btn-primary {
-          display: none;
-        }
-
-        .menu-icon {
-          display: block;
-        }
-      }
-
-    }
-
-    .hero-section {
-
-      .banner-container {
-        padding: 1.2rem;
-        gap: 1rem;
-        flex-direction: column-reverse;
-
-        .banner-content {
-          text-align: center;
-          width: 100%;
-
-          .banner-title {
-            font-size: 2.7rem;
+          .card-1 {
+            display: none;
           }
 
-          .banner-text {
-            font-size: 1.1rem;
-            line-height: 1.5;
-          }
+          .card-4side {
+            gap: 1rem;
 
-          .btn-primary {
-            padding: 1rem 2.5rem;
-            font-size: 1.4rem;
-            margin-top: 1rem;
-          }
-        }
+            .card {
 
-        .banner-image {
-          width: 100%;
+              .date-badges-small {
+                bottom: 80px;
+              }
 
-          img {
-            width: 100%;
-          }
-
-        }
-      }
-
-    }
-
-    .curriculum-section {
-
-
-      .curriculum-container {
-
-        padding: 1.2rem;
-
-        .curriculum-content {
-
-          .curriculum-text {
-            width: 100%;
-            margin: 1.5rem 0;
-          }
-        }
-
-        .curriculum-card {
-          grid-template-columns: repeat(1, 1fr);
-        }
-
-        .move-btn {
-          display: none;
-        }
-      }
-
-    }
-
-    .stories-section {
-
-      .stories-container {
-        
-        .card-container {
-          grid-template-columns: repeat(1, 1fr);
-        
-
-        .card-1 {
-          display: none;
-        }
-
-        .card-4side {
-          gap: 1rem;
-
-          .card {
-
-            .date-badges-small {
-              bottom: 80px;
+              .card-title {
+                margin: 1rem;
+                padding: .8rem 0;
+              }
             }
 
-            .card-title {
-              margin: 1rem;
-              padding: .8rem 0;
-            }
-          }
+            .card-4, .card-5 {
 
-          .card-4, .card-5 {
-
-            .date-badges-small {
-              bottom: 120px;
-            }
-
-          }
-        }
-      }
-    }
-    }
-
-    .footer-section {
-      height: auto;
-      padding: 4rem 1rem;
-
-      .footer-container {
-        display: flex;
-        flex-direction: column;
-        padding: 0rem 1rem;
-        gap: 2rem;
-
-        .footer-content {
-
-            .logo {
-
-              img {
-                width: 10%;
+              .date-badges-small {
+                bottom: 100px;
               }
 
             }
-
-          .footer-text {
-            font-size: 1.3rem;
           }
         }
+      }
+      }
 
-        .nav-links {
-          
-  
-          .nav-title {
-           
-  
-          }
-  
-          .nav-item {
-            gap: 1.5rem;
+      .footer-section {
+        height: auto;
+        padding: 4rem 1rem;
 
-              
-            .nav-link { 
+        .footer-container {
+          display: flex;
+          flex-direction: column;
+          padding: 0rem 1rem;
+          gap: 2rem;
+
+          .footer-content {
+
+            .navbar-logo {
+              display: flex;
+              width: 60%;
+              gap: 1rem;
+        
+              .logo {
+                  display: flex;
+                  align-items: center;
+                  font-size: .6rem;
+                  font-weight: 600;
+                  gap: .5rem;
+                  text-transform: uppercase;
+            
+                  img {
+                    width: 100%;
+                  }
+              }
+            }
+
+            .footer-text {
               font-size: 1.3rem;
-              font-weight: 500;
             }
           }
-  
+
+          .nav-links {
+            
+    
+            .nav-title {
+            
+    
+            }
+    
+            .nav-item {
+              gap: 1.5rem;
+
+                
+              .nav-link { 
+                font-size: 1.3rem;
+                font-weight: 500;
+              }
+            }
+    
+          }
+
         }
-
       }
-    }
 
- }
+  }
 
 
 
