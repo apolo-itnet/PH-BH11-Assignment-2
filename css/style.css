@@ -321,13 +321,15 @@
 
         &:hover {
           transform: translateY(-10px);
-          
         }
 
         
         img {
           width: 40%;
+          transition: transform .3s ease;
+
         }
+
         .card-title {
           font-size: 1.2rem;
           font-weight: 700;
@@ -343,6 +345,11 @@
           font-size: 1rem;
           font-weight: 500;
         }
+
+        &:hover img {
+          transform: scale(1.2) translateY(-10px);
+        }
+
 
       }
 
