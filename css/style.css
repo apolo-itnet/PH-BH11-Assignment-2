@@ -217,15 +217,87 @@
       
       }
 
-      .banner-image {
+      /* .banner-image {
+        position: relative;
 
-        img {
+        .background {
+          background: url(../assets/kids-bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
           width: 100%;
+          height: 100%;
+          position: absolute;
+          top: -4px;
+          left: 0;
+          z-index: -1;
         }
+        
+      img {
+        background-position: top;
+        width: 100%;
+        transition: transform 0.8s ease;
+      }
+
+      &:hover img {
+        transform: rotate(-10deg) translateY(-15px);
+      }
+      } */
+
+      .banner-image {
+        position: relative;
+
+        .background {
+          background: url(../assets/kids-bg.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: -4px;
+          left: 0;
+          z-index: -1;
+        }
+        
+      img {
+        background-position: top;
+        width: 100%;
+        transition: transform 1.5s ease;
+      }
+
+      &:hover img {
+        animation: hoverEffect 1.5s ease forwards;
+      }
+
+      &:not(:hover) img {
+        animation: reverseEffect 3s ease forwards;
+      }
       }
 
     }
+  }
 
+  @keyframes hoverEffect {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    50% {
+      transform: rotate(-10deg) translateY(-15px);
+    }
+    100% {
+      transform: rotate(-10deg) translateY(-700px);
+    }
+  }
+
+  @keyframes reverseEffect {
+    0% {
+      transform: rotate(-10deg) translateY(700px);
+    }
+    50% {
+      transform: rotate(-10deg) translateY(-15px);
+    }
+    100% {
+      transform: rotate(0deg) translateY(0);
+    }
   }
   
   /* Hero-section style end  */
